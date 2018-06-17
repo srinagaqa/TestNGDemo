@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGDemo">
+  <test thread-count="5" name="Test">
+   <parameter name="username" value = "priya@gmail.com"/>
+   <parameter name="password" value = "1234"/>
+    <classes>
+      <!-- <class name="Test1.GoogleSearch"/> -->
+     <!--   <class name="Test1.SalesForceTest"/> -->
+      <class name="Test1.FBLogin">
+     	<methods>
+       		 <include name="validLogin">
+         		 <parameter name="username" value = "srinag@gmail.com"/>
+          		<parameter name="password" value = "2345"/>
+        	</include>
+        	<include name ="invalidLogin"/>
+     	</methods>
+     </class>  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- TestNGDemo -->
