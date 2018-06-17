@@ -34,6 +34,7 @@ public WebDriver cDriver;
 		System.out.println("before click");
 		cDriver.findElement(By.id("loginbutton")).click();
 		System.out.println("after click");
+		System.out.println("make some changes");
 	  
 	  
   }
@@ -49,6 +50,7 @@ public WebDriver cDriver;
 		System.out.println(uname);
 		cDriver.findElement(By.id("loginbutton")).click();
 		System.out.println("after click inv");
+		System.out.println("make some changes");
 	  
 	  
   }
